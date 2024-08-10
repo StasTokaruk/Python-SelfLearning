@@ -28,6 +28,7 @@ while game_is_on:
     time.sleep(0.1)
     snake.move_snake()
     coord.show_coord(snake.segments[0].xcor(), snake.segments[0].ycor(), True)
+    coord.show_coord_food(food.random_x, food.random_y, True)
     if snake.segments[0].distance(food) < 15:
         score.score_add()
         food.refresh()

@@ -8,10 +8,10 @@ class Score(Turtle):
         self.color('white')
         self.penup()
         self.goto(0, 260)
-        self.write(f'Score: {self.score}', align='center')
+        self.write(f'Score: {self.score}', align='center', font=('Arial', 14, 'bold'))
 
     def score_add(self):
         self.clear()
         self.goto(0, 260)
         self.score+=1
-        self.write(f'Score: {self.score}', move=True, align='center')
+        self.write(f'Score: {self.score}', move=True, align='center', font=('Arial', 14, 'bold'))
